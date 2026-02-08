@@ -1,0 +1,33 @@
+{
+  "name": "pedalada-dos-estados-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "migrate": "node src/migrations/run.js",
+    "seed": "node src/migrations/seed.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^9.0.0",
+    "@fastify/helmet": "^11.1.0",
+    "@fastify/rate-limit": "^9.1.0",
+    "@fastify/websocket": "^10.0.0",
+    "dotenv": "^17.2.4",
+    "drizzle-orm": "^0.33.0",
+    "fastify": "^4.28.0",
+    "ioredis": "^5.4.1",
+    "jose": "^5.6.0",
+    "nanoid": "^5.0.7",
+    "pino": "^9.3.0",
+    "pino-pretty": "^11.2.0",
+    "postgres": "^3.4.4",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.24.0"
+  }
+}
